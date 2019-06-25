@@ -1,0 +1,28 @@
+.toolbox {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.toolbox-container {
+    display: inline-block;
+    text-align: left;
+    background-color: black;
+    opacity: 0.8;
+    height: 35px;
+    width: 104%;
+    margin: -8px;
+    user-select: none;
+}
+
+.material-icons {
+    color: #fff;
+    padding: 5px;
+    transition: 0.5s all;
+}
+
+.material-icons:hover {
+    background-color: black;
+    opacity: 1;
+    border-radius: 50%
+}

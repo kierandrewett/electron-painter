@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Electron Painter</title>
+            <link rel="stylesheet" href="toolbox.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </head>
+        <body>
+
+        </body>
+        <script>
+            
+            window.onload = function() {
+                const modal = require('electron-modal');
+                const path = require('path');
+                
+                modal.open(path.join(__dirname + '/toolbox.html'), {
+                
+                // Any BrowserWindow options
+                width: 400,
+                height: 100,
+                y: document.documentElement.clientHeight,
+                x: document.documentElement.clientWidth,
+                title: 'Electron Painter',
+                frame: false,
+                alwaysOnTop: true,
+                fullscreen: false,
+                skipTaskbar: true,
+                transparent: true,
+                resizable: false,
+                movable: false,
+                webPreferences: {
+                    nodeIntegration: true
+                }
+                
+                }).then(data => {
+                    data.show()
+                });
+            }
+        
+        </script>
+    </html>

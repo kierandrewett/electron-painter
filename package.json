@@ -1,0 +1,26 @@
+{
+  "name": "electron-painter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnderDev/electron-painter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnderDev/electron-painter/issues"
+  },
+  "homepage": "https://github.com/EnderDev/electron-painter#readme",
+  "dependencies": {
+    "electron-modal": "^1.0.0",
+    "electron-reload": "^1.4.0"
+  },
+  "devDependencies": {
+    "electron": "^5.0.5"
+  }
+}
